@@ -28,7 +28,7 @@ header {
 
 @media (max-width: 600px) {
     header {
-        padding: 10px 20px;
+        padding: 20px;
     }
 }
 
@@ -39,15 +39,40 @@ nav {
     justify-content: space-between;
 }
 
-@media (max-width: 600px) {
-    nav ul li {
-        display: none;
-    }
-}
 
 nav .navbar a {
     font-size: 35px;
     color: yellow;
+}
+
+@media (max-width: 600px) {
+    nav .navbar a {
+        font-size: 25px;
+    }
+
+    nav ul {
+        padding-top: 100px;
+        flex-direction: column;
+        position: fixed;
+        width: 50%;
+        height: 400px;
+        background-color: rgb(29,45,91);
+        top: 70px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    .active nav::before {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+
+.active {
+    left: 0;
+    height: 100vh;
 }
 
 nav ul {
@@ -67,6 +92,17 @@ nav ul li a {
 
 nav ul li a:hover {
     color: white;
+}
+
+.menu {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .menu {
+        display: block;
+        cursor: pointer;
+    }
 }
 
 main {
@@ -185,8 +221,7 @@ main .info {
 }
 
 ::-webkit-scrollbar {
-    width: 5px;
-    background-color: #0055ff;
+    display: none;
 }
 
 #about {
@@ -333,7 +368,6 @@ main .info {
 }
 
 footer {
-    position: absolute;
     width: 100%;
     height: auto;
     padding: 20px 100px;
