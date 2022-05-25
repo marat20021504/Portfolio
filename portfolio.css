@@ -25,6 +25,13 @@ section {
     background-color: #18162183;
 }
 
+@media (max-width: 600px) {
+    section{
+        padding: 10px 20px;
+        border-radius: 50px 50px 0 0;
+    }
+}
+
 section h2 {
     text-align: center;
     font-weight: bold;

@@ -1,10 +1,7 @@
-$(document).ready(function() {
-    $(window).bind('scroll', function() {
-        let gap = 50;
-        if($(window).scrollTop > gap) {
-            $('header').addClass('active');
-        } else {
-            $('header').removeClass('active');   
-        }
-    })
+const menu = document.querySelector(".menu")
+const active = document.querySelector(".active")
+const ul = document.querySelector(".ul")
+
+menu.addEventListener("click", function() {
+    ul.classList.toggle("active")
 })
