@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-	<script src="https://kit.fontawesome.com/e1634538cd.js" crossorigin="anonymous"></script>
 	<title>Document</title>
-    <link rel="stylesheet" href="/style.css">
+	<script src="https://kit.fontawesome.com/e1634538cd.js" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="/script.js" defer></script>
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
 	<header>
@@ -19,26 +18,45 @@
 			<div class="navbar">
 				<a href="#">Portfo<span style="color: crimson">lio</span></a>
 			</div>
-			<ul>
+			<ul class="ul">
 				<li class="nav-item">
-					<a href="/index.html#home">Uy</a>
+					<a class="hover" href="/uzbek.html#home">Uy</a>
 				</li>
 				<li class="nav-item">
-					<a href="/index.html#about">Men haqimda</a>
+					<a class="hover" href="/uzbek.html#about">Men haqimda</a>
 				</li>
 				<li class="nav-item">
-					<a href="/index.html#services">Servislar</a>
+					<a class="hover" href="/uzbek.html#services">Servislar</a>
 				</li>
-				<li class="nav-item">
+
+				<div class="language">
 					<a href="/index.html">Eng</a>
-				</li>
-				<li class="nav-item">
-					<a href="/uzbek.html">Uz</a>
-				</li>
-				<li class="nav-item">
-					<a href="/rus.html">Ru</a>
-				</li>
+					<a href="uzbek.html">Uzb</a>
+					<a href="rus.html">Рус</a>
+				</div>
+
 			</ul>
+
+			<div class="lang-menu">
+				<div class="selected-lang">
+					<img src="https://www.sic-info.org/wp-content/uploads/2014/01/uz.png" alt="icon" width="22" height="14">
+					Uzb
+				</div>
+				<ul>
+					<li>
+						<img src="https://www.sic-info.org/wp-content/uploads/2014/01/us.png" alt="icon" width="22" height="14">
+						<a class="eng" href="/index.html">Eng</a>
+					</li>
+					<li>
+						<img src="	https://www.sic-info.org/wp-content/uploads/2014/01/ru.png" alt="ru">
+						<a class="ru" href="/rus.html">Рус</a>
+					</li> 
+				</ul>
+			</div>
+
+			<div class="menu" onclick="submit()">
+				<i style="font-weight: 900; font-size: 30px; color: white;" class="fas fa-bars" aria-hidden="true"></i>
+			</div>
 		</nav>
 		
 	</header>
@@ -48,6 +66,7 @@
 			<p>Salom, mening ismim</p>
 			<h1>Qo'chqorov <span style="color: rgb(220, 20, 220)">Marat</span></h1>
 			<b>Men Frontend dasturchisiman</b>
+			<button class="btn btn1"><a style="text-decoration: none;" href="/portfolio.html">Portfel</a></button>
 		</div>
 	</main>
 
@@ -117,7 +136,7 @@
 
 			</div>
 
-			<div data-aos="flip-left" data-aos-duration="1700">
+			<div data-aos="flip-up" data-aos-duration="1700">
 
 				<div class="box">
 					<h3>Ko'nikmalar</h3>
@@ -197,7 +216,7 @@
 			</div>
 
 			<div 
-				data-aos="fade-left"
+				data-aos="fade-up"
 				data-aos-anchor-placement="top-center"
 				data-aos-duration="1500">
 
