@@ -153,6 +153,16 @@ nav ul li a:hover {
     color: white;
 }
 
+.language {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .language {
+        display: block;
+    }    
+}
+
 .selected-lang {
     text-align: center;
     cursor: pointer;
